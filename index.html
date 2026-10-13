@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Konstantinos Tsakogiannis — Electrical &amp; Computer Engineer</title>
+<meta name="description" content="CV of Konstantinos Tsakogiannis, Electrical and Computer Engineering candidate at NTUA specializing in Software Engineering and Networks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="page">
+  <header class="intro">
+    <h1>Konstantinos Tsakogiannis</h1>
+    <p class="role">Electrical and Computer Engineering candidate, NTUA</p>
+    <p class="lead">Specializing in Software Engineering and Network Systems. A disciplined problem-solver with experience in high-stakes team environments and a proven ability to manage complex projects under pressure.</p>
+    <p class="contact">
+      <a class="ico" href="mailto:contact.ktsakogiannis@google.com"><img src="icon-mail.png" alt="" width="22" height="16">contact.ktsakogiannis@google.com</a>
+      <span class="ico"><img src="icon-location.png" alt="" width="14" height="18">Papagou, Attiki, Greece</span>
+    </p>
+  </header>
+
+  <nav aria-label="CV sections">
+    <h2 class="hint">Select a section to read more</h2>
+    <ul class="index">
+      <li><button data-open="education"><span class="name">Education</span><span class="peek">National Technical University of Athens · MEng, expected January 2027</span></button></li>
+      <li><button data-open="experience"><span class="name">Work experience</span><span class="peek">Automation Developer · Content Systems Developer</span></button></li>
+      <li><button data-open="skills"><span class="name">Technical skills</span><span class="peek">C/C++, Python, web, SQL, GNU/Linux, network programming</span></button></li>
+      <li><button data-open="activities"><span class="name">Extracurricular activities</span><span class="peek">Military service, Scouts of Greece, violin, astronomy</span></button></li>
+      <li><button data-open="languages"><span class="name">Languages</span><span class="peek">Greek, English, German</span></button></li>
+      <li><button data-open="certifications"><span class="name">Certifications</span><span class="peek">Offshore sailing skipper · Certificate in Sailing</span></button></li>
+    </ul>
+  </nav>
+</main>
+
+<dialog id="panel" aria-labelledby="panel-title">
+  <div class="panel-head">
+    <h2 id="panel-title"></h2>
+    <button class="close" aria-label="Close">Close</button>
+  </div>
+  <div class="panel-body" id="panel-body"></div>
+</dialog>
+
+<template id="education" data-title="Education">
+  <article class="entry">
+    <h3>Electrical and Computer Engineering</h3>
+    <p class="meta">National Technical University of Athens · Oct 2017 – Present</p>
+    <ul>
+      <li>MEng in Electrical and Computer Engineering.</li>
+      <li>Specialization: Software Engineering, Computer Systems, and Networks.</li>
+      <li>Diploma thesis: “LLM-Assisted Visualization of EU Legal Manuscripts”.</li>
+      <li>Expected graduation: January 2027.</li>
+    </ul>
+  </article>
+  <article class="entry">
+    <h3>2nd Model Lyceum of Athens</h3>
+    <p class="meta">Sep 2014 – Jun 2017</p>
+    <ul>
+      <li>Admitted via a competitive national selection examination process.</li>
+      <li>High School Certificate (Apolyterion), June 2017, grade 19.0/20.</li>
+      <li>Represented the school as a team member in the pre-selection competition for the 2016 European Union Science Olympiad (EUSO), ranking 5th nationally.</li>
+    </ul>
+  </article>
+</template>
+
+<template id="experience" data-title="Work experience">
+  <article class="entry">
+    <h3>Automation Developer &amp; Associate</h3>
+    <p class="meta">Aeiforiki Symvouleftiki Ltd · Aug 2024 – Apr 2026</p>
+    <ul>
+      <li>Developed automation scripts for generating analysis spreadsheets, reducing manual reporting time.</li>
+      <li>Engineered automated survey workflows using the Google Street View API for remote infrastructure auditing and data collection.</li>
+      <li>Conducted on-site technical audits and autopsies of electromechanical installations in municipal buildings to evaluate eligibility for EU-funded energy efficiency grants.</li>
+    </ul>
+  </article>
+  <article class="entry">
+    <h3>Content Systems Developer</h3>
+    <p class="meta">Kallipos Initiative · Jul 2021 – Jul 2023</p>
+    <ul>
+      <li>Contributed to a large-scale Open Access project for academic publications for Greek higher education institutions, implemented by the Special Account for Research Funding (ELKE) of NTUA.</li>
+      <li>Developed an automated publishing pipeline using DocBook XML to convert academic manuscripts into multi-format digital textbooks (PDF, ePub, HTML).</li>
+    </ul>
+  </article>
+</template>
+
+<template id="activities" data-title="Extracurricular activities">
+  <article class="entry">
+    <h3>Mandatory Military Service</h3>
+    <p class="meta">Hellenic Army General Staff, G2 Directorate · Mar 2025 – Mar 2026</p>
+    <ul><li>Served as a Force Protection Operator.</li></ul>
+  </article>
+  <article class="entry">
+    <h3>Scouts of Greece</h3>
+    <p class="meta">2009 – present</p>
+    <ul>
+      <li>Scout (2009 – 2017).</li>
+      <li>Leadership roles and volunteering (2017 – present).</li>
+      <li>Elected Member of the General Assembly (2023 – present).</li>
+      <li>Multidisciplinary Adult Leader Trainer (2026 – present).</li>
+    </ul>
+  </article>
+  <article class="entry">
+    <h3>Music</h3>
+    <ul><li>Advanced-level violin performance and music theory classes (Grade 7 ABRSM equivalent).</li></ul>
+  </article>
+  <article class="entry">
+    <h3>Astronomy</h3>
+    <ul><li>Amateur visual astronomer.</li></ul>
+  </article>
+</template>
+
+<template id="skills" data-title="Technical skills">
+  <article class="entry">
+    <h3>Technical skills</h3>
+    <ul class="tags"><li>C/C++</li><li>Python (including ML &amp; microcontrollers)</li><li>HTML/CSS/JavaScript</li><li>SQL</li><li>GNU/Linux</li><li>Network programming</li></ul>
+  </article>
+</template>
+
+<template id="languages" data-title="Languages">
+  <article class="entry">
+    <dl class="langs">
+      <div><dt>Greek</dt><dd>Native</dd></div>
+      <div><dt>English</dt><dd>Fluent (CAE/IELTS 7.5 equivalent)</dd></div>
+      <div><dt>German</dt><dd>Good (B1)</dd></div>
+    </dl>
+  </article>
+</template>
+
+<template id="certifications" data-title="Certifications">
+  <article class="entry">
+    <h3>Skipper for 25’ Whaler and Offshore Sailing Boats</h3>
+    <p class="meta">Lloyd’s Register approved training course, provided by Scouts of Greece</p>
+  </article>
+  <article class="entry">
+    <h3>Certificate in Sailing</h3>
+    <p class="meta">Hellenic Offshore Racing Club</p>
+  </article>
+</template>
+
+<script src="script.js"></script>
+</body>
+</html>
