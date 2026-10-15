@@ -14,9 +14,13 @@ a{color:var(--accent)}
 .intro h1{font:600 clamp(2.2rem,7vw,3.4rem)/1.08 var(--serif);letter-spacing:-.01em;margin:0 0 .6rem;color:var(--accent)}
 .role{font-size:1.1rem;font-weight:500;margin:0 0 1.25rem}
 .lead{font:1.2rem/1.65 var(--serif);max-width:38rem;margin:0 0 1.5rem}
-.contact{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;color:var(--muted);font-size:.95rem;margin:0 0 3.5rem}
+.contact{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;color:var(--muted);font-size:.95rem;margin:0 0 1rem}
 .ico{display:inline-flex;align-items:center;gap:.6rem}
 .ico img{display:block;height:1.1rem;width:auto;flex:none}
+.download-cv{display:inline-flex;align-items:center;gap:.65rem;margin-top:1.5rem;padding:.7rem 1rem;background:var(--accent);border:1px solid var(--accent);border-radius:.4rem;color:#fff;font-size:.95rem;font-weight:600;text-decoration:none;transition:background .15s,color .15s,transform .15s}
+.download-cv span{font-size:1.2rem;line-height:1}
+.download-cv:hover,.download-cv:focus-visible{background:var(--ink);border-color:var(--ink);color:#fff}
+.download-cv:active{transform:translateY(1px)}
 
 .hint{font:500 .95rem var(--sans);color:var(--muted);margin:0 0 .75rem}
 .index{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
